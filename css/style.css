@@ -192,6 +192,7 @@ body {
     height: 558px;
 
     border: 0.05px solid var(--white-color);
+    transition: height 0.3s;
 }
 .button {
     position:absolute;
@@ -211,7 +212,7 @@ body {
   cursor: pointer;
 }
 .info {
-    position: relative;
+    /* position: relative; */
     display: flex;
     width: 930px;
     height: 408px;
@@ -224,13 +225,15 @@ body {
     right: 49px;
 }
 .education {
-    position: inherit;
+    /* position: inherit; */
     display: flex;
     width: 538px;
     height: 152px;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 72px;
-
+    margin-bottom: 20px;
+    
     top: 47px;
     bottom: 385px;
     left: 27px;
@@ -241,6 +244,8 @@ body {
     width: 634px;
     height: 152px;
     align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
     gap: 72px;
 }
 .skills {
@@ -248,7 +253,15 @@ body {
     width: 584px;
     height: 24px;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 72px;
+}
+.divider {
+    width: 930px;
+    height: 1px;
+    background-color: var(--white-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .education-frame {
@@ -259,11 +272,17 @@ body {
     align-items: flex-start;
     gap: 8px;
 }
+.education-frame p {
+    margin: 0;
+}
 .jobs-frame {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+}
+.jobs-frame p {
+    margin: 0;
 }
 .skills-frame {
     display: flex;
@@ -278,18 +297,5 @@ body {
     }
 }
 
-@media (max-width: 360px) {
-    .about {
-        height: auto;
-    }
-    .logo {
-        justify-content: flex-start;
-    }
-    .my-photo {
-        justify-content: flex-start;
-        margin-top: 16px;
-    }
-    .red-square {
-        margin-top: 16px;
-    }
-}
+
+    
