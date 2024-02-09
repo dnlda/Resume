@@ -1,301 +1,388 @@
-html {
-    box-sizing: border-box;
+
+.container {
+    width:  1440px;
+    height:  860px;
+    position: relative;
+    display: flex;
+    padding:  0px;
+    align-items: center;
+    background: #000;
+    background-position: center;
+    background-size: cover;
+    gap:  31px;
 }
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-body {
+
+/* TYPOGRAPHY SECTION */
+
+h1 {
+    font-family: Montserrat, sans-serif; 
+    font-size:  24px; 
+    font-weight: bold; 
+    line-height: 28px;
+    color: #ffffff;
+    letter-spacing: -2%;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-:root {
-    --accent-color: #F51B1B;
-    --main: #000000;
-    --white-color: #FFFFFF;
+  }
 
-}
-.text-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 20px;
-    letter-spacing: -0.02em;
-    color: #fff;
-}
-.text-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    color: #fff;
-
-}
-.text-gray {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-size: 18px;
+  h2 {
+    font-family: Montserrat, sans-serif; 
+    font-size:  16px; 
+    font-weight: bold; 
+    line-height: 28px;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .text_main {
+    font-family: TT Commons, sans-serif; 
+    font-size:  17px; 
+    font-weight: 100;
     line-height: 24px;
-    color: var(--white-color);
-    opacity: 0.4;
-}
-.text-main {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--white-color);
-}
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: var(--main);
-    height:  100vh;
-}
-.logo {
-    position: absolute;
-    display: flex;
-    width: 239.907px;
-    height: 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
+    color: #ffffff;
+    letter-spacing: -2%;
+    margin: 0;
+  }
+  
+  .text2 {
+    font-family: TT Commons, sans-serif; 
+    font-size:  16px; 
+    font-weight: 100;
+    line-height: 28px;
+    color: #ffffff;
+    letter-spacing: -1%;
+    margin: 0;
+  }
 
-    top: 27px;
-    bottom: 814px;
-    left: 1160px;
-    right: 41.09px;
-}
-.union {
-    width: 162px;
-    height: 16px;
-    flex-shrink: 0;
-}
-.Rectangle {
-    width: 24px;
-    height: 11px;
-    transform: rotate(90deg);
-    flex-shrink: 0;
-}
-.front {
-    flex-shrink: 0;
-    height: 14.2px;
-    width: 51.507px;
-}
-.my-photo {
+  .text_secondary {
+    font-family: TT Commons, sans-serif; 
+    font-size:  16px; 
+    font-weight: 100;
+    line-height: 28px;
+    color: #ffffff80;
+    letter-spacing: -1%;
+    margin: 0;
+  }
+  
+  
+/* LEFT SECTION */
+
+.left_section {
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 32px;
+    margin:  40px  0px  40px  40px;
+    width:  322px;
+    height:  780px;
 }
-.photo {
-    position: absolute;
-    left: 40px;
-    right: 1078px;
-    top:40px;
-    bottom: 465px;
+
+.my_photo {
+    width: 100%;
     height: 355px;
-    width: 322px;
 }
-.triangle {
-    position: absolute;;
-    top: 348px;
-    bottom: 29px;
-    left: 170px;
-    right: 131px;
 
-    color: var(--accent-color);
-}
-.red-square {
-    position: absolute;
-    width: 322px;
-    height: 454px;
-    display: flex;
-    padding: 40px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    flex: 1 0 0;
-    align-items: stretch;
-    border-radius: 24px 24px 0px 0px;
-    background: var(--accent-color);
-    top: 366px;
-    left: 40px;
-    right: 1078px;
-    bottom: 40px;
-}
-.my-name {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
- }
- .my-name p {
-    margin: 0;
-    padding: 0;
-    align-items: flex-start;
-}
- .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    width: 255px;
-    height: 156px;
-    top: 646px;
-    left: 64px;
-    right: 1151px;
-}
-.phone,
-.mail,
-.telegram,
-.git {
-    width: 225px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-.phone-icon,
-.mail-icon,
-.telegram-icon,
-.git-icon {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-}
-.about-me {
-    display: flex;
-    width: 690px;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-.frame {
-    position: absolute;
-    top: 58px;
-    bottom: 40px;
-    left: 393px;
-    right: 39;
-}
-.square {
+.about {
+    width:  100%;
+    height:  473px;
+    position: relative; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 1006px;
-    height: 558px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: -40px; 
+    z-index:  1; 
+}
 
-    border: 0.05px solid var(--white-color);
-    transition: height 0.3s;
+.triangle_container {
+    position: relative;
+    align-items: start;
+    width:  100%;
+    height: 19px;
 }
-.button {
-    position:absolute;
-    display: flex;
-    width: 1008px;
-    height: 20px;
-    top: 203.5px;
-    padding: 0px 891px 0px 57px;
-    align-items: center;
-    flex-shrink: 0;
-    /* cursor: pointer; */
+
+.triangle_container img {
+    display: block;
+    margin:  0 auto;
 }
-.btn-icon{
-  width: 60px;
-  height: 20px;
-  flex-shrink: 0;
-  cursor: pointer;
-}
+
 .info {
-    /* position: relative; */
+    width:  322px;
+    height:  454px;
+    position: relative; 
     display: flex;
-    width: 930px;
-    height: 408px;
+    justify-content: start;
+    align-items: flex-start;
+    gap:  40px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    top: 47px;
-    bottom: 129px;
-    left: 27px;
-    right: 49px;
-}
-.education {
-    /* position: inherit; */
-    display: flex;
-    width: 538px;
-    height: 152px;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 72px;
-    margin-bottom: 20px;
-    
-    top: 47px;
-    bottom: 385px;
-    left: 27px;
-    right: 441px;
-}
-.jobs {
-    display: flex;
-    width: 634px;
-    height: 152px;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 72px;
-}
-.skills {
-    display: flex;
-    width: 584px;
-    height: 24px;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 72px;
-}
-.divider {
-    width: 930px;
-    height: 1px;
-    background-color: var(--white-color);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: red;
+    border-radius: 24px 24px 0px 0px;
 }
 
-.education-frame {
-    width: 323px;
-    height: px;
+.name {
     display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: flex-start;
+    width: 233px;
+    height: 60px;
     gap: 8px;
+    margin: 40px 0px  0px 24px;
 }
-.education-frame p {
-    margin: 0;
+
+.name h1, .name p {
+    margin:  0;
 }
-.jobs-frame {
+
+.contacts {
     display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    margin: 0px 0px 0px 24px;
+    width: 225px;
+    height: 156px;
+    gap: 20px;
 }
-.jobs-frame p {
-    margin: 0;
-}
-.skills-frame {
+
+.contact_item {
     display: flex;
-    align-items: flex-start;
+    width: 175px;
+    height: 24px;
+    gap:  11px;
+    flex-direction: row;
+}
+
+.icons {
+    width: 19px;
+    height: 19px;
+}
+
+
+
+/* RIGHT SECTION */
+
+.logo {
+    width:  240px;
+    height:  24px;
+    position: absolute;
+    top:  26px;
+    right:  40px;
+}
+
+.right_section {
+
+    width: 1008px;
+    height:  762px;
+    position: relative;
+    display: flex;
+    padding:  0px;
+    flex-direction: column; 
+    margin: 58px 39px 40px 0px;
     gap: 32px;
 }
 
 
-@media (min-width: 1440px) {
-    .about {
-        height: 860px;
-    }
+.about_me {
+    width: auto;
+    height: 144px;
 }
 
-
+.about_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:  1008px;
+    height:  586px;
+    border:  1px solid #fff;
     
+  }
+
+  .button_container {
+    width: 100%;
+    height: 20px;
+
+  }
+
+  button {
+    position: relative;
+    margin-top: -2px;
+    border: none;
+    padding:  0;
+    cursor: pointer;
+    border-top: 1px solid #000;
+    background: none;
+    margin-left: 57px;
+  }
+
+  button img {
+   width: 60px;
+   height: 19px;
+
+  }
+
+  .information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width:  auto;
+    height:  558px;
+    margin:  28px  50px  48px  28px;
+}
+
+.horizontal_line {
+    width: auto;
+    border-top: 1px solid #ffffff50;
+    margin: 20px 0px 20px 0px;
+}
+
+.educations {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width:  auto;
+    height: 152px;
+    position: relative;
+    gap: 72px;
+}
+
+.list_education {
+    width: auto;
+    height: 152px;
+    gap: 8px;
+}
+
+.jobs {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width:  auto;
+    height: 152px;
+    position: relative;
+    gap: 72px;
+}
+
+.list_job {
+    width: auto;
+    height: 152px;
+    gap: 8px;
+}
+
+.skills {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width:  584px;
+    height: 24px;
+    position: relative;
+    gap: 72px;
+}
+
+.header_text_container {
+    width: 120px;
+    height: 152px;
+}
+
+.last_header_container {
+    height: 24px;
+    margin-right: 53px;
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .left_section {
+      margin: 40px 0px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .my_photo {
+      width: 100%;
+      height: auto;
+    }
+  
+    .about {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .triangle_container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .info {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+    }
+  
+    .name {
+      width: 100%;
+      height: auto;
+      margin: 20px 0px 0px 0px;
+    }
+  
+    .contacts {
+      width: 100%;
+      height: auto;
+      margin: 20px 0px 0px 0px;
+    }
+  
+    .horizontal_line {
+      margin: 10px 0px 10px 0px;
+    }
+  
+    .educations {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .jobs {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .skills {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .header_text_container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .last_header_container {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  
+    .left_section {
+      width: 320px;
+      height: 612px;
+      margin: 0;
+    }
+  }

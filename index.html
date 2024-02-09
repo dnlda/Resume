@@ -1,95 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="ru">
+<head>
   <title>Resume</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fa/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
-integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=TT+Commons&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <div class="about">
-            <div class="logo">
-               <img src="img/Union.svg" alt="Union" class="union">
-               <img src="img/triangle.svg" alt="Rectangle" class="Rectangle">
-               <img src="img/front.svg" alt="front" class="front">
+<body>
+    <section class="container"><div class="logo">
+        <img src="img/Logo.svg" alt="logo">
+    </div>
+    <div class="left_section">
+      <img  class="my_photo" src="img/photo.jpg" alt="Мое фото">
+      <div class="about">
+        <div class="triangle_container">
+            <img src="img/triangle.svg" alt="triangle">
+        </div>
+        <div class="info">
+            <div class="name">
+                <h1>Фролов Даниил</h1>
+                <p class="text_main">25 лет, Воронеж</p>
             </div>
-            <div class="my-photo">
-                <img src="img/photo.jpg" alt="photo" class="photo">
-                <img src="img/triangle-2.svg" alt="triangle" class="triangle">
-            </div>
-            <div class="red-square">
-                <div class="my-name">
-                    <h1 class="text-h1">Фролов Даниил</h1>
-                    <p class="text-main">25 лет, Воронеж</p>
-                </div>
-                <div class="contact-info">
-                    <div class="phone">
-                        <img src="img/phone-call.svg" alt="phone-icon" class="phone-icon">
-                        <span class="text-main">+7 952 554 39 90</span>
-                    </div>
-                    <div class="mail">
-                        <img src="img/mail.svg" alt="mail-icon" class="mail-icon">
-                        <span class="text-main">lamboss9080@gmail.com</span>
-                    </div>
-                    <div class="telegram">
-                        <img src="img/Vector.svg" alt="telegramm-icon" class="telegram-icon">
-                        <span class="text-main">@bibop_and_bobop</span>
-                    </div>
-                    <div class="git">
-                        <img src="img/git.svg" alt="git-icon" class="git-icon">
-                        <span class="text-main">https://github.com/dnlda</span>
-                    </div>
-                </div>
-            </div>
-            <div class="frame">
-                <div class="about-me">
-                    <p class="text-main" id="aboutMeText">
-                        Привет! Я обладаю знаниями в HTML, CSS, JavaScript и фреймворках, таких как React и Angular. Я всегда стараюсь быть в курсе последних технологических тенденций и постоянно улучшать свои навыки. Люблю работать в команде и готов делиться своими знаниями и опытом с коллегами. Я также умею работать с различными инструментами и библиотеками, такими как Bootstrap, jQuery, Sass и другие. Я готов принять любой вызов и настроен на постоянное развитие в своей профессии
-                    </p>
-                </div>
-                <div class="square">
-                    <!-- <div class="button" onclick="toggleAboutMe()">-->
-                    <div class="button" id="changeBtn">
-                        <img src="img/button.svg" alt="button" class="btn-icon">
-                    </div>
-                    <div class="info">
-                        <div class="education">
-                            <h2 class="text-h2">Образование</h2>
-                            <div class="education-frame">
-                                <p class="text-main">Воронежский Государственный Университет</p>
-                                <p class="text-gray">Физический Факультет</p>
-                                <p class="text-gray">2021</p>
-                            </div>
-                        </div>
-                        <hr class="divider">
-                        <div class="jobs">
-                            <h2 class="text-h2">Карьера</h2>
-                            <div class="jobs-frame">
-                                <p class="text-main">ПАО Сбербанк</p>
-                                <p class="text-gray">Инженер по разработке (frontend-разработчик)</p>
-                                <p class="text-gray">2022</p>
-                            </div>
-                        </div>
-                        <hr class="divider">
-                        <div class="skills">
-                            <h2 class="text-h2">Навыки</h2>
-                            <div class="skills-frame">
-                                <p class="text-main">HTML</p>
-                                <p class="text-main">SCC</p>
-                                <p class="text-main">JavaScript</p>
-                                <p class="text-main">TypeScript</p>
-                                <p class="text-main">React</p>
-                                <p class="text-main">Python</p>
-                                <p class="text-main">RPA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="contacts">
+                <div class="contact_item">
+                    <img class="icons" src="img/iconPhone.svg" alt="телефон">
+                    <p class="text_main">+ 7 952 554 39 90</p>
+                  </div>
+                  <div class="contact_item">
+                    <img class="icons" src="img/iconMail.svg" alt="почта">
+                    <p class="text_main">lamboss9080@gmail.com</p>
+                  </div>
+                  <div class="contact_item">
+                    <img class="icons" src="img/iconTelegramm.svg" alt="телеграм">
+                    <p class="text_main">@bibop_and_bobop</p>
+                  </div>
+                  <div class="contact_item">
+                    <img class="icons" src="img/iconGit.svg" alt="гитхаб">
+                    <p class="text_main">https://github.com/dnlda</p>
+                  </div>        
             </div>
         </div>
-    </body>
+      </div>
+    </div>
+    </div>
+    <div class="right_section">
+        <div class="about_me">
+            <p class="text2">
+              Привет! Я обладаю знаниями в HTML, CSS, JavaScript и фреймворках, таких как React и Angular.
+              Я всегда стараюсь быть в курсе последних технологических тенденций и постоянно улучшать свои навыки. 
+              Люблю работать в команде и готов делиться своими знаниями и опытом с коллегами. 
+              Я также умею работать с различными инструментами и библиотеками, такими как Bootstrap, jQuery, Sass и другие.
+               Я готов принять любой вызов и настроен на постоянное развитие в своей профессии.
+            </p>
+        </div>
+        <div class="about_info">
+            <div class="button_container"> 
+               <button> <img src="img/arrow.svg" alt="button"></button>
+            </div>
+            <div class="information">
+                <div class="educations">
+                    <div class="header_text_container">
+                        <h2>Образование</h2>
+                    </div>
+                    <div class="list_education">
+                        <p class="text2">Воронежский Государственный Университет</p>
+                        <p class="text_secondary">Физический факультет</p>
+                        <p class="text_secondary">2016-2022</p>
+                    </div>
+                </div>
+                <div class="horizontal_line"></div>
+                <div class="jobs">
+                    <div class="header_text_container">
+                        <h2>Карьера</h2>
+                    </div>
+                    <div class="list_job">
+                        <p class="text2">ПАО Сбербанк</p>
+                        <p class="text_secondary">Старший финансовый контролер</p>
+                        <p class="text_secondary">2022-2023</p>
+                        <p class="text2">ПАО Сбербанк</p>
+                        <p class="text_secondary">Инженер по разработке (frontend)</p>
+                        <p class="text_secondary">2023-2024</p>
+                    </div>
+                </div>
+                <div class="horizontal_line"></div>
+                <div class="skills">
+                    <div class="last_header_container">
+                        <h2>Навыки</h2>
+                    </div>
+                    <p class="text2">HTML</p>
+                    <p class="text2">CSS</p>
+                    <p class="text2">JavaScript</p>
+                    <p class="text2">React</p>
+                    <p class="text2">TypeScript</p>
+                </div>
+            </div>     
+        </div> 
+    </div>   </div>
+</body>
 </html>
