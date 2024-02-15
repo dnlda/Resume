@@ -1,388 +1,394 @@
-
-.container {
-    width:  1440px;
-    height:  860px;
-    position: relative;
-    display: flex;
-    padding:  0px;
-    align-items: center;
-    background: #000;
-    background-position: center;
-    background-size: cover;
-    gap:  31px;
+body {
+  background-color: black;
+  margin: 0;
 }
 
 /* TYPOGRAPHY SECTION */
-
 h1 {
-    font-family: Montserrat, sans-serif; 
-    font-size:  24px; 
-    font-weight: bold; 
-    line-height: 28px;
-    color: #ffffff;
-    letter-spacing: -2%;
-    margin: 0;
-  }
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #ffffff;
+  letter-spacing: -2%;
+  margin: 0;
+}
 
-  h2 {
-    font-family: Montserrat, sans-serif; 
-    font-size:  16px; 
-    font-weight: bold; 
-    line-height: 28px;
-    color: #ffffff;
-    margin: 0;
-  }
-  
-  .text_main {
-    font-family: TT Commons, sans-serif; 
-    font-size:  17px; 
-    font-weight: 100;
-    line-height: 24px;
-    color: #ffffff;
-    letter-spacing: -2%;
-    margin: 0;
-  }
-  
-  .text2 {
-    font-family: TT Commons, sans-serif; 
-    font-size:  16px; 
-    font-weight: 100;
-    line-height: 28px;
-    color: #ffffff;
-    letter-spacing: -1%;
-    margin: 0;
-  }
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+}
 
-  .text_secondary {
-    font-family: TT Commons, sans-serif; 
-    font-size:  16px; 
-    font-weight: 100;
-    line-height: 28px;
-    color: #ffffff80;
-    letter-spacing: -1%;
-    margin: 0;
-  }
-  
-  
+.text_main {
+  font-family: TT Commons, sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #ffffff;
+  letter-spacing: -2%;
+  margin: 0;
+}
+
+.text2 {
+  font-family: TT Commons, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 28px;
+  color: #ffffff;
+  letter-spacing: -1%;
+  margin: 0;
+}
+
+.text_secondary {
+  font-family: TT Commons, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 28px;
+  color: #ffffff80;
+  letter-spacing: -1%;
+  margin: 0;
+}
+
+.content {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+}
+
+/* LOGO */
+.header {
+  height: 24px;
+}
+
+.logo {
+  width: 240px;
+  height: 24px;
+  float: right;
+
+  margin-right: 40px;
+}
+
 /* LEFT SECTION */
-
 .left_section {
-    position: relative;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    margin:  40px  0px  40px  40px;
-    width:  322px;
-    height:  780px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0px 0px 40px;
+  width: 322px;
+  height: 780px;
 }
 
 .my_photo {
-    width: 100%;
-    height: 355px;
+  width: 100%;
+  height: 355px;
 }
 
 .about {
-    width:  100%;
-    height:  473px;
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: -40px; 
-    z-index:  1; 
+  width: 100%;
+  height: 473px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: -40px;
+  z-index: 1;
 }
 
 .triangle_container {
-    position: relative;
-    align-items: start;
-    width:  100%;
-    height: 19px;
+  position: relative;
+  align-items: start;
+  width: 100%;
+  height: 19px;
 }
 
 .triangle_container img {
-    display: block;
-    margin:  0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .info {
-    width:  322px;
-    height:  454px;
-    position: relative; 
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    gap:  40px;
-    flex-direction: column;
-    background-color: red;
-    border-radius: 24px 24px 0px 0px;
+  width: 322px;
+  height: 454px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 40px;
+  flex-direction: column;
+  background-color: red;
+  border-radius: 24px 24px 0px 0px;
 }
 
 .name {
-    display: flex;
-    position: relative; 
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 233px;
-    height: 60px;
-    gap: 8px;
-    margin: 40px 0px  0px 24px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 233px;
+  height: 60px;
+  gap: 8px;
+  margin: 40px 0px 0px 24px;
 }
 
-.name h1, .name p {
-    margin:  0;
+.name h1,
+.name p {
+  margin: 0;
 }
 
 .contacts {
-    display: flex;
-    position: relative; 
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 0px 0px 0px 24px;
-    width: 225px;
-    height: 156px;
-    gap: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0px 0px 0px 24px;
+  width: 225px;
+  height: 156px;
+  gap: 20px;
 }
 
 .contact_item {
-    display: flex;
-    width: 175px;
-    height: 24px;
-    gap:  11px;
-    flex-direction: row;
+  display: flex;
+  width: 175px;
+  height: 24px;
+  gap: 11px;
+  flex-direction: row;
 }
 
 .icons {
-    width: 19px;
-    height: 19px;
+  width: 19px;
+  height: 19px;
 }
-
-
 
 /* RIGHT SECTION */
 
-.logo {
-    width:  240px;
-    height:  24px;
-    position: absolute;
-    top:  26px;
-    right:  40px;
-}
-
 .right_section {
-
-    width: 1008px;
-    height:  762px;
-    position: relative;
-    display: flex;
-    padding:  0px;
-    flex-direction: column; 
-    margin: 58px 39px 40px 0px;
-    gap: 32px;
+  width: 1008px;
+  height: 762px;
+  position: relative;
+  display: flex;
+  padding: 0px;
+  margin-top: 16px;
+  flex-direction: column;
+  gap: 40px;
 }
-
 
 .about_me {
-    width: auto;
-    height: 144px;
+  width: 1008px;
+  height: 165px;
 }
 
 .about_info {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width:  1008px;
-    height:  586px;
-    border:  1px solid #fff;
-    
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1008px;
+  height: 586px;
+  border: 1px solid #fff;
+}
 
-  .button_container {
-    width: 100%;
-    height: 20px;
+.button_container {
+  width: 100%;
+  height: 20px;
+}
 
-  }
+button {
+  position: relative;
+  margin-top: -2px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-top: 1px solid #000;
+  background: none;
+  margin-left: 57px;
+}
 
-  button {
-    position: relative;
-    margin-top: -2px;
-    border: none;
-    padding:  0;
-    cursor: pointer;
-    border-top: 1px solid #000;
-    background: none;
-    margin-left: 57px;
-  }
+button img {
+  width: 60px;
+  height: 19px;
+}
 
-  button img {
-   width: 60px;
-   height: 19px;
-
-  }
-
-  .information {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width:  auto;
-    height:  558px;
-    margin:  28px  50px  48px  28px;
+.information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: auto;
+  height: 558px;
+  margin: 28px 50px 48px 28px;
 }
 
 .horizontal_line {
-    width: auto;
-    border-top: 1px solid #ffffff50;
-    margin: 20px 0px 20px 0px;
+  width: auto;
+  border-top: 1px solid #ffffff50;
+  margin: 20px 0px 20px 0px;
 }
 
 .educations {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width:  auto;
-    height: 152px;
-    position: relative;
-    gap: 72px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 152px;
+  position: relative;
+  gap: 72px;
 }
 
 .list_education {
-    width: auto;
-    height: 152px;
-    gap: 8px;
+  width: auto;
+  height: 152px;
+  gap: 8px;
 }
 
 .jobs {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width:  auto;
-    height: 152px;
-    position: relative;
-    gap: 72px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 152px;
+  position: relative;
+  gap: 72px;
 }
 
 .list_job {
-    width: auto;
-    height: 152px;
-    gap: 8px;
+  width: auto;
+  height: 152px;
+  gap: 8px;
 }
 
 .skills {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width:  584px;
-    height: 24px;
-    position: relative;
-    gap: 72px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 584px;
+  height: 24px;
+  position: relative;
+  gap: 72px;
+}
+
+.list_skills {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 
 .header_text_container {
-    width: 120px;
-    height: 152px;
+  width: 120px;
+  height: 152px;
 }
 
 .last_header_container {
-    height: 24px;
-    margin-right: 53px;
+  height: 24px;
+  margin-right: 53px;
 }
 
-@media screen and (max-width: 780px) {
-    .container {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      gap: 0;
-    }
-  
-    .left_section {
-      margin: 40px 0px;
-      width: 100%;
-      height: auto;
-    }
-  
-    .my_photo {
-      width: 100%;
-      height: auto;
-    }
-  
-    .about {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-    }
-  
-    .triangle_container {
-      width: 100%;
-      height: auto;
-    }
-  
-    .info {
-      width: 100%;
-      height: auto;
-      border-radius: 0;
-    }
-  
-    .name {
-      width: 100%;
-      height: auto;
-      margin: 20px 0px 0px 0px;
-    }
-  
-    .contacts {
-      width: 100%;
-      height: auto;
-      margin: 20px 0px 0px 0px;
-    }
-  
-    .horizontal_line {
-      margin: 10px 0px 10px 0px;
-    }
-  
-    .educations {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .jobs {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .skills {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .header_text_container {
-      width: 100%;
-      height: auto;
-    }
-  
-    .last_header_container {
-      margin-right: 0;
-    }
+@media screen and (max-width: 360px) {
+  .content {
+    width: 360px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
   }
-  @media screen and (max-width: 360px) {
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
-  
-    .left_section {
-      width: 320px;
-      height: 612px;
-      margin: 0;
-    }
+
+  .header {
+    height: 24px;
   }
+
+  .logo {
+    margin: 20px 0px 48px 20px;
+    float: left;
+  }
+
+  .left_section {
+    width: 320px;
+    height: 612px;
+    margin: 0;
+  }
+
+  .my_photo {
+    height: 353px;
+  }
+
+  .about {
+    height: 307px;
+  }
+
+  .info {
+    gap: 20px;
+  }
+
+  .name {
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .contacts {
+    gap: 18px;
+  }
+
+  .right_section {
+    width: 320px;
+    height: 762px;
+    position: relative;
+    display: flex;
+    padding: 0px;
+    margin-top: 16px;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .about_me {
+    width: 320px;
+    height: 1240px;
+  }
+
+  .about_info {
+    width: 320px;
+    height: 568px;
+    border: 1px solid #fff;
+  }
+
+  button {
+    margin-left: 130px;
+  }
+
+  .educations {
+    flex-direction: column;
+    width: auto;
+    height: 164px;
+    gap: 16px;
+  }
+
+  .jobs {
+    flex-direction: column;
+    width: auto;
+    height: 164px;
+    gap: 16px;
+  }
+
+  .skills {
+    flex-direction: column;
+    width: auto;
+    height: 164px;
+    gap: 16px;
+  }
+
+  .list_skills {
+    gap: 16px;
+  }
+}
